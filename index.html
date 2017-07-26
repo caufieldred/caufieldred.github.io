@@ -1,9 +1,158 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<head></head>
+
+<head>
+    <title>Erica Renee Gilbert | SE, FE, Sometimes Writer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Erica Gilbert: Cat & Web Enthusiast" />
+    <meta name="keywords" content="front end, sales engineer, web development" />
+    <meta name="author" content="Erica Gilbert" />
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Special+Elite" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/ee72425307.js"></script>
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Erica Renee Gilbert",
+        "jobTitle": "Senior Sales Engineer",
+        "url": "http://www.ericareneegilbert.com",
+        "email": "me@ericareneegilbert.com",
+        "location": "Boston, MA"
+    }
+    </script>
+</head>
+
 <body>
-  <a href="goals.html"><img src="http://i.imgur.com/dosK05U.gif" /></a>
-  <br>
-  <a href="worries.html"><img src="http://i.imgur.com/2s0HwpM.gif" /></a>
+    <!-- Header -->
+    <header id="header">
+        <h1>Erica Renee Gilbert</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Well, Hello.</a></li>
+                <li><a href="#one">SE</a></li>
+                <li><a href="#two">FE</a></li>
+                <li><a href="#writer">Sometimes Writer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+        <div class="content">
+            <header class="typewriter">
+                <h2>'Ello there, I'm Erica.</h2>
+            </header>
+            <p>Pleased to make your internet acquaintance. Lover of cats, typewriters, and all things internet. A current Sales Engineer, former Front End Developer, and sometimes writer, this is my little website.</p>
+            <footer>
+                <a href="#one" class="button style2 down">More</a>
+            </footer>
+        </div>
+    </section>
+    <!-- One -->
+    <section id="one" class="main style2 right dark fullscreen">
+        <div class="content box style2">
+            <header>
+                <h2>What I Do</h2>
+            </header>
+            <p>I listen to customer painpoints and map them (if applicable) to solutions offered by the real-time data management and personalization platform company with whom I'm so gainfully employed. It's challenging to know when to walk away, when to bend and scope a custom solution, and rewarding when the painpoints map directly back to the off-the-shelf product. In an ever-evolving industry with new buzzwords everyday, I love working in a cross-departmental role, communicating between sales, marketing, product and R&D.</p>
+        </div>
+        <a href="#two" class="button style2 down anchored">Next</a>
+    </section>
+    <!-- Two -->
+    <section id="two" class="main style2 left dark fullscreen">
+        <div class="content box style2">
+            <header>
+                <h2>Who I Am</h2>
+            </header>
+            <p>Laugh above all, loyal to a fault. I don't take myself too seriously, but I'm still committed and passionate about my job, the people I work with, and the technology that powers our solutions. At work I can be in front of customers walking through a platform demo, filling in cells on an RFP spreadsheet, or creating a custom code example of a platform powered use case on a prospect website. Outside of the office I can be found enjoying craft cocktails, checking out some random band at an intimate venue, or as you might imagine, cuddling with my cats or yes, even sometimes typing a letter on one of my typewriters.</p>
+        </div>
+        <a href="#writer" class="button style2 down anchored">Next</a> 
+    </section>
+    <!-- Writer-->
+    <section id="writer" class="main style3 primary">
+        <div class="content">
+            <header>
+                <h2>Sometimes Writer</h2>
+                <p>I used to fancy myself a perceptive one and tried my hand at writing. The creative juices strike every so often. Check out some short stories and poems <a href="http://caufieldred.tumblr.com/search/mycreativewriting/">here.</a> Otherwise, I quite enjoy snapping photos, but currently only seem to do that on Instagram.</p>
+                <!-- Gallery  -->
+                <div class="gallery">
+                    <div id="instafeed"></div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+                    <script type="text/javascript">
+                      var userFeed = new Instafeed({
+                        get: 'user',
+                        userId: 175776044,
+                        accessToken: "175776044.1677ed0.f3b9606c0ec34c4a9568f757c8822687",
+                        resolution: 'standard_resolution',
+                        template: '<article><a href="{{link}}" id="{{id}}" class="image fit"><img src="{{image}}" alt="" /></a></article>',
+                        sortBy: 'most-recent',
+                        limit: 4,
+                        links: false
+                      });
+                      userFeed.run();
+                    </script>
+                </div>
+            </header>
+        </div>
+        <a href="#contact" class="button style2 down anchored">Next</a>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="main style3 secondary">
+        <div class="content">
+            <header>
+                <h2>Say Hello.</h2>
+                <p>I'd love to hear from you, whether you are a cat person or not.</p>
+            </header>
+            <div class="box">
+                <form method="post" action="mailto:lovesponge03@gmail.com?subject=contact_submission">
+                    <div class="field half first">
+                        <input type="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="field half">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea name="message" placeholder="Message" rows="6"></textarea>
+                    </div>
+                    <ul class="actions">
+                        <li>
+                            <input type="submit" value="Send Message" />
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Icons -->
+        <ul class="actions">
+            <li><a href="https://twitter.com/caufieldred" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/caufieldred" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/caufieldred/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.linkedin.com/in/erica-gilbert-17705913" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        <!-- Menu -->
+        <ul class="menu">
+            <li>&copy; Erica Renee Gilbert</li>
+        </ul>
+    </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
