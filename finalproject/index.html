@@ -12,6 +12,7 @@
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Raleway|Special+Elite" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/ee72425307.js"></script>
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -49,33 +50,6 @@
                 <h2>'Ello there, I'm Erica.</h2>
             </header>
             <p>Pleased to make your internet acquaintance. Lover of cats, typewriters, and all things internet. A current Sales Engineer, former Front End Developer, and sometimes writer, this is my little website.</p>
-            <div class="container">
-                <div class="main">
-                    <ul class="cbp-ig-grid">
-                        <li>
-                            <a href="#">
-                                <span class="cbp-ig-icon cbp-ig-icon-cat"></span>
-                                <h3 class="cbp-ig-title">Cats</h3>
-                                <span class="cbp-ig-category">Mrow, a look at my Insta Cat photos.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="cbp-ig-icon cbp-ig-icon-keyboard"></span>
-                                <h3 class="cbp-ig-title">Typewriters</h3>
-                                <span class="cbp-ig-category">Clickety-clack, Instas of my favorite writing machines.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="cbp-ig-icon cbp-ig-icon-laptop"></span>
-                                <h3 class="cbp-ig-title">Internets</h3>
-                                <span class="cbp-ig-category">Instagrams at Work</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
             <footer>
                 <a href="#one" class="button style2 down">More</a>
             </footer>
@@ -87,7 +61,7 @@
             <header>
                 <h2>What I Do</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+            <p>I listen to customer painpoints and map them (if applicable) to solutions offered by the real-time data management and personalization platform company with whom I'm so gainfully employed. It's challenging to know when to walk away, when to bend and scope a custom solution, and rewarding when the painpoints map directly back to the off-the-shelf product. In an ever-evolving industry with new buzzwords everyday, I love working in a cross-departmental role, communicating between sales, marketing, product and R&D.</p>
         </div>
         <a href="#two" class="button style2 down anchored">Next</a>
     </section>
@@ -97,16 +71,34 @@
             <header>
                 <h2>Who I Am</h2>
             </header>
-            <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum. Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu, id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+            <p>Laugh above all, loyal to a fault. I don't take myself too seriously, but I'm still committed and passionate about my job, the people I work with, and the technology that powers our solutions. At work I can be in front of customers walking through a platform demo, filling in cells on an RFP spreadsheet, or creating a custom code example of a platform powered use case on a prospect website. Outside of the office I can be found enjoying craft cocktails, checking out some random band at an intimate venue, or as you might imagine, cuddling with my cats or yes, even sometimes typing a letter on one of my typewriters.</p>
         </div>
-        <a href="#writer" class="button style2 down anchored">Next</a>
+        <a href="#writer" class="button style2 down anchored">Next</a> 
     </section>
     <!-- Writer-->
     <section id="writer" class="main style3 primary">
         <div class="content">
             <header>
                 <h2>Sometimes Writer</h2>
-                <p>I used to fancy myself a perceptive one and tried my hand at writing. The creative juices strike every so often. Check out some short stories and poems <a href="http://caufieldred.tumblr.com/search/mycreativewriting/">here.</a></p>
+                <p>I used to fancy myself a perceptive one and tried my hand at writing. The creative juices strike every so often. Check out some short stories and poems <a href="http://caufieldred.tumblr.com/search/mycreativewriting/">here.</a> Otherwise, I quite enjoy snapping photos, but currently only seem to do that on Instagram.</p>
+                <!-- Gallery  -->
+                <div class="gallery">
+                    <div id="instafeed"></div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+                    <script type="text/javascript">
+                      var userFeed = new Instafeed({
+                        get: 'user',
+                        userId: 175776044,
+                        accessToken: "175776044.1677ed0.f3b9606c0ec34c4a9568f757c8822687",
+                        resolution: 'standard_resolution',
+                        template: '<article><a href="{{link}}" id="{{id}}" class="image fit"><img src="{{image}}" alt="" /></a></article>',
+                        sortBy: 'most-recent',
+                        limit: 4,
+                        links: false
+                      });
+                      userFeed.run();
+                    </script>
+                </div>
             </header>
         </div>
         <a href="#contact" class="button style2 down anchored">Next</a>
@@ -119,7 +111,7 @@
                 <p>I'd love to hear from you, whether you are a cat person or not.</p>
             </header>
             <div class="box">
-                <form method="post" action="#">
+                <form method="post" action="http://formspree.io/lovesponge03@gmail.com">
                     <div class="field half first">
                         <input type="text" name="name" placeholder="Name" />
                     </div>
